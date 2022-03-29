@@ -16,7 +16,7 @@ const Home = () => {
     window.onload = () => {
       setTimeout(() => {
         document.querySelector("body").classList.add("display");
-      }, 4000);
+      }, 1000);
     };
 
     document.querySelector(".scroll-btn").addEventListener("click", () => {
