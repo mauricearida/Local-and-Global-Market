@@ -100,7 +100,6 @@ const Home = () => {
                   src={Roof_icon}
                   style={{
                     color: "#4b4b4b",
-
                     width: "4.7rem",
                     height: "4.7rem",
                     marginRight: "2rem",
