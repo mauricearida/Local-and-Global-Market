@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import "./home.css";
 
-import Image from "../assets/pic6.jpg";
+import Image from "../assets/header_pic.jpg";
 import Centerimage from "../assets/pic4.jpg";
 import Pic_roofing from "../assets/pic5.jpg";
+import Pic_heating from "../assets/heating.jpeg";
 import Kitchen_renovation from "../assets/kitchen.png";
 import Roof_icon from "../assets/people-roof-solid.svg";
+import Gaf1 from "../assets/GAF.png";
+import Gaf2 from "../assets/GAF2.png";
 
 const Home = () => {
   useEffect(() => {
@@ -16,7 +19,7 @@ const Home = () => {
     window.onload = () => {
       setTimeout(() => {
         document.querySelector("body").classList.add("display");
-      }, 1000);
+      }, 10);
     };
 
     document.querySelector(".scroll-btn").addEventListener("click", () => {
@@ -54,7 +57,7 @@ const Home = () => {
             <img src={Image} />
           </div>
           <div className="banner">
-            <h1>Warm Home</h1>
+            <h1>Local & Global Market</h1>
             <p>Residential, Commercial, Industrial and Municipal</p>
             <button>Let's talk</button>
           </div>
@@ -125,7 +128,17 @@ const Home = () => {
                 Company you can trust to build a quality roof for your home.
               </p>
             </div>
-            <div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                cursor: "pointer",
+              }}
+              className="service"
+            >
+              <a href="https://www.gaf.com/en-us" target="_blank">
+                <img src={Gaf1} />
+              </a>
               {/* <div className="service-header">
                 <i className="fas fa-pencil-alt"></i>
                 <h3>Design</h3>
@@ -160,7 +173,17 @@ const Home = () => {
               </p>
             </div>
 
-            <div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                cursor: "pointer",
+              }}
+              className="service"
+            >
+              <a href="https://www.gaf.com/en-us" target="_blank">
+                <img src={Gaf2} />
+              </a>
               {/*   <div className="service-header">
                 <i className="far fa-building"></i>
                 <h3>Execution</h3>
@@ -191,30 +214,33 @@ const Home = () => {
 
         <section className="team">
           <div className="section-header">
-            <h1 className="section-heading">Our Services</h1>
+            <h1 className="section-heading">Let us Help You</h1>
             <div className="underline"></div>
           </div>
+
           <div className="cards-wrapper">
             <div className="card" data-tilt>
+              <h1>Roofing</h1>
               <div className="card-img-wrapper">
                 <img src={Pic_roofing} alt="CEO" />
               </div>
-              {/* <div className="card-info">
-                <h2>John Smith</h2>
-                <h3>CEO</h3>
+              {/*  <div className="card-info">
+                <h2>Roofing Services</h2>
+                  <h3>CEO</h3>
                 <p>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Asperiores, impedit!"
                 </p>
                 <button>Read More</button>
-              </div> */}
+              </div>*/}
             </div>
             <div className="card" data-tilt>
+              <h1>Air Conditioning</h1>
               <div className="card-img-wrapper">
-                <img src={Pic_roofing} alt="Designer" />
+                <img src={Pic_heating} alt="Designer" />
               </div>
-              {/* <div className="card-info">
-                <h2>Ann Brown</h2>
+              {/*  <div className="card-info">
+                <h2>Heating/Air Conditioning Services</h2>
                 <h3>Designer</h3>
                 <p>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -224,17 +250,18 @@ const Home = () => {
               </div> */}
             </div>
             <div className="card" data-tilt>
+              <h1>Renovation</h1>
               <div className="card-img-wrapper">
                 <img src={Kitchen_renovation} alt="Architect" />
               </div>
               {/* <div className="card-info">
-                <h2>Mary Doe</h2>
-                <h3>Architect</h3>
+                <h2>Renovation Services</h2>
+                {/* <h3>Architect</h3>
                 <p>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Asperiores, impedit!"
-                </p>
-                <button>Read More</button>
+                </p>  
+                  <button>Read More</button>  
               </div> */}
             </div>
           </div>
@@ -260,6 +287,20 @@ const Home = () => {
                 </div>
                 <input type="submit" className="submit-btn" value="Submit" />
               </form>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  marginTop: "3rem",
+                }}
+              >
+                <a href="https://www.gaf.com/en-us" target="_blank">
+                  <img src={Gaf1} />
+                </a>
+                <a href="https://www.gaf.com/en-us" target="_blank">
+                  <img src={Gaf2} />
+                </a>
+              </div>
             </div>
           </div>
         </section>

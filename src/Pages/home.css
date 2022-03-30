@@ -17,7 +17,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #262626;
+  background-color: #7a2825;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@ html {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 50%;
-  background-color: #262626;
+  background-color: #7a2825;
   margin: -0.4rem 0 0 -0.4rem;
 }
 
@@ -182,8 +182,8 @@ html {
 
 .line {
   width: 100%;
-  height: 0.2rem;
-  background-color: #fff;
+  height: 0.3rem;
+  background-color: #7a2825;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -209,7 +209,7 @@ html {
   left: 5rem;
   width: 10rem;
   height: 4rem;
-  background-color: #262626;
+  background-color: #7a2825;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,7 +231,7 @@ html {
   content: "";
   position: absolute;
   border-left: 1rem solid transparent;
-  border-right: 1rem solid #e2b646;
+  border-right: 1rem solid #7a2825;
   border-bottom: 1rem solid transparent;
   border-top: 1rem solid transparent;
   top: 50%;
@@ -250,7 +250,7 @@ html {
 .img-wrapper {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
@@ -258,8 +258,8 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
-  animation: scale 25s;
+  opacity: 0.95;
+  animation: scale s;
 }
 
 @keyframes scale {
@@ -273,8 +273,8 @@ html {
 
 .banner {
   position: absolute;
-  top: 30%;
-  left: 15%;
+  top: 55%;
+  left: 8%;
 }
 
 .banner h1 {
@@ -282,7 +282,7 @@ html {
   font-size: 8rem;
   font-weight: 300;
   color: #fff;
-  width: 50%;
+  width: 70%;
   line-height: 9rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
@@ -296,6 +296,7 @@ html {
   color: #fff;
   width: 70%;
   letter-spacing: 0.1rem;
+
   margin-bottom: 3rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   opacity: 0;
@@ -305,7 +306,7 @@ html {
 .banner button {
   width: 25rem;
   height: 7rem;
-  background-color: #262626;
+  background-color: #7a2825;
   border: none;
   font-family: "Muli", serif;
   font-size: 2rem;
@@ -366,7 +367,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  color: #262626;
+  color: #7a2825;
   width: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -400,7 +401,7 @@ html {
 }
 
 .social-media i:hover {
-  background-color: #262626;
+  background-color: #7a2825;
 }
 
 .about-us {
@@ -427,12 +428,13 @@ html {
 .underline {
   width: 12rem;
   height: 0.3rem;
-  background-color: #262626;
+  background-color: #7a2825;
 }
 
 .services {
   width: 100%;
   height: 100%;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(6, 6rem);
@@ -529,10 +531,18 @@ html {
 
 .card {
   width: 37rem;
-  height: 45rem;
+  height: 50rem;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 0.5rem;
   position: relative;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #7a2825;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
 }
 
 .card-img-wrapper {
@@ -540,6 +550,7 @@ html {
   height: 100%;
   background-color: #262626;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .card-img-wrapper img {
@@ -600,7 +611,7 @@ html {
 .card-info button {
   width: 10rem;
   height: 3rem;
-  background-color: #262626;
+  background-color: #7a2825;
   border: none;
   font-family: "Baloo Da 2", serif;
   font-size: 1.4rem;
@@ -627,9 +638,8 @@ html {
 }
 
 .contact-left {
-  width: 35%;
-  /* background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-    url(images/contact-bg.jpg) center no-repeat; */
+  width: 70%;
+  background: url(../assets/pic5.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -711,7 +721,7 @@ html {
 .submit-btn {
   width: 45rem;
   height: 5rem;
-  background-color: #262626;
+  background-color: #7a2825;
   color: #fff;
   border: none;
   margin-top: 2rem;
@@ -761,7 +771,7 @@ html {
   bottom: 5rem;
   width: 4.5rem;
   height: 4.5rem;
-  background-color: #262626;
+  background-color: #7a2825;
   display: flex;
   justify-content: center;
   align-items: center;
