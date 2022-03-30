@@ -235,7 +235,7 @@ const Home = () => {
               </div>*/}
             </div>
             <div className="card" data-tilt>
-              <h1>Air Conditioning</h1>
+              <h1>Heating</h1>
               <div className="card-img-wrapper">
                 <img src={Pic_heating} alt="Designer" />
               </div>
