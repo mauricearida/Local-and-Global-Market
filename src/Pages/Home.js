@@ -384,7 +384,9 @@ const Home = () => {
               <img src={Centerimage} style={{ borderRadius: "90px" }} />
             </div>
           </div> */}
-          <h1>Areas we cover here</h1>
+          <h1 style={{ fontSize: "40px" }}>
+            Areas we cover will be here with their zip codes
+          </h1>
         </section>
 
         <section id="contact" className="contact">
