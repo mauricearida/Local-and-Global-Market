@@ -278,7 +278,7 @@ const Home = () => {
         </section>
 
         <section id="areaswecover" className="about-us">
-          <div className="section-header">
+          {/* <div className="section-header">
             <h1 className="section-heading">Areas we Cover</h1>
             <h1 className="section-heading-section">Louisiana</h1>
             <div className="underline"></div>
@@ -321,7 +321,7 @@ const Home = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Doloremque, officia! Necessitatibus delectus sed dicta corrupti
                 voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-              </p>*/}
+              </p> 
             </div>
             <div className="service">
               <div className="service-header">
@@ -366,7 +366,7 @@ const Home = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Doloremque, officia! Necessitatibus delectus sed dicta corrupti
                 voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
-              </p>*/}
+              </p> 
             </div>
             <div className="service">
               <div className="service-header">
@@ -383,7 +383,8 @@ const Home = () => {
             <div className="about-us-img-wrapper">
               <img src={Centerimage} style={{ borderRadius: "90px" }} />
             </div>
-          </div>
+          </div> */}
+          <h1>Areas we cover here</h1>
         </section>
 
         <section id="contact" className="contact">
