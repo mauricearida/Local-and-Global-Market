@@ -59,7 +59,9 @@ const Home = () => {
           <div className="banner">
             <h1>Local & Global Market</h1>
             <p>Residential, Commercial, Industrial and Municipal</p>
-            <button>Let's talk</button>
+            <a href="#contact">
+              <button>Let's talk</button>
+            </a>
           </div>
         </header>
 
@@ -71,23 +73,31 @@ const Home = () => {
               </a>
             </li>
             <li className="menu-item">
-              <a href="#" className="menu-link" data-content="About Us">
+              <a href="#aboutus" className="menu-link" data-content="About Us">
                 About Us
               </a>
             </li>
             <li className="menu-item">
-              <a href="#" className="menu-link" data-content="Team">
-                Team
+              <a href="#services" className="menu-link" data-content="Services">
+                Services
               </a>
             </li>
             <li className="menu-item">
-              <a href="#" className="menu-link" data-content="Pricing">
-                Pricing
+              <a
+                href="#areaswecover"
+                className="menu-link"
+                data-content="Areas We Cover"
+              >
+                Areas&nbsp;We&nbsp;Cover
               </a>
             </li>
             <li className="menu-item">
-              <a href="#" className="menu-link" data-content="Contact">
-                Contact
+              <a
+                href="#contact"
+                className="menu-link"
+                data-content="Contact Us"
+              >
+                Contact Us
               </a>
             </li>
           </ul>
@@ -104,9 +114,173 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="about-us">
+        <section id="aboutus" className="about-us">
           <div className="section-header">
             <h1 className="section-heading">About Us</h1>
+            <div className="underline"></div>
+          </div>
+          <div className="services">
+            <div className="service">
+              <div className="service-header">
+                <img
+                  src={Roof_icon}
+                  style={{
+                    color: "#4b4b4b",
+                    width: "4.7rem",
+                    height: "4.7rem",
+                    marginRight: "2rem",
+                  }}
+                />
+                <h3>Residential Roofing</h3>
+              </div>
+              <p className="service-text">
+                Warm Home, is the reliable and experienced Residential Roofing
+                Company you can trust to build a quality roof for your home.
+              </p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                cursor: "pointer",
+              }}
+              className="service"
+            >
+              <a href="https://www.gaf.com/en-us" target="_blank">
+                <img src={Gaf1} />
+              </a>
+              {/* <div className="service-header">
+                <i className="fas fa-pencil-alt"></i>
+                <h3>Design</h3>
+              </div>
+              <p className="service-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+                voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+              </p>*/}
+            </div>
+            <div className="service">
+              <div className="service-header">
+                <i className="fas fa-paint-roller"></i>
+                <h3>Repairs & Maintenance</h3>
+              </div>
+              <p className="service-text">
+                Warm Home, provides Roofing Repairs for Residential and
+                Commercial Roofs. We know you want a reliable Roofing Contractor
+                to be knowledgeable, honest and efficient with getting repairs
+                on your roof done quickly and correctly!
+              </p>
+            </div>
+            <div className="service">
+              <div className="service-header">
+                <i className="fas fa-paint-brush"></i>
+                <h3>Commercial Roofing</h3>
+              </div>
+              <p className="service-text">
+                Warm Home, provides experienced and professional commercial
+                roofing for any type or size business. GTRS is one of the
+                leading roofing companies.
+              </p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                cursor: "pointer",
+              }}
+              className="service"
+            >
+              <a href="https://www.gaf.com/en-us" target="_blank">
+                <img src={Gaf2} />
+              </a>
+              {/*   <div className="service-header">
+                <i className="far fa-building"></i>
+                <h3>Execution</h3>
+              </div>
+              <p className="service-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+                voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+              </p>*/}
+            </div>
+
+            <div className="service">
+              <div className="service-header">
+                <i className="fas fa-toilet"></i>
+                <h3>Kitchen & Bathroom</h3>
+              </div>
+              <p className="service-text">
+                Ready for your dream kitchen? Want to remodel that old bathroom?
+                Need to replace damaged carpet with flooring that you love? We
+                can complete all of your interior and exterior remodeling
+                projects to meet your design preferences.
+              </p>
+            </div>
+            <div className="about-us-img-wrapper">
+              <img src={Centerimage} style={{ borderRadius: "90px" }} />
+            </div>
+          </div>
+        </section>
+
+        <section id="ourservices" className="team">
+          <div className="section-header">
+            <h1 className="section-heading">Our Services</h1>
+            <div className="underline"></div>
+          </div>
+
+          <div className="cards-wrapper">
+            <div className="card" data-tilt>
+              <h1>Roofing</h1>
+              <div className="card-img-wrapper">
+                <img src={Pic_roofing} alt="CEO" />
+              </div>
+              {/*  <div className="card-info">
+                <h2>Roofing Services</h2>
+                  <h3>CEO</h3>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores, impedit!"
+                </p>
+                <button>Read More</button>
+              </div>*/}
+            </div>
+            <div className="card" data-tilt>
+              <h1>Heating</h1>
+              <div className="card-img-wrapper">
+                <img src={Pic_heating} alt="Designer" />
+              </div>
+              {/*  <div className="card-info">
+                <h2>Heating/Air Conditioning Services</h2>
+                <h3>Designer</h3>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores, impedit!"
+                </p>
+                <button>Read More</button>
+              </div> */}
+            </div>
+            <div className="card" data-tilt>
+              <h1>Renovation</h1>
+              <div className="card-img-wrapper">
+                <img src={Kitchen_renovation} alt="Architect" />
+              </div>
+              {/* <div className="card-info">
+                <h2>Renovation Services</h2>
+                {/* <h3>Architect</h3>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores, impedit!"
+                </p>  
+                  <button>Read More</button>  
+              </div> */}
+            </div>
+          </div>
+        </section>
+
+        <section id="areaswecover" className="about-us">
+          <div className="section-header">
+            <h1 className="section-heading">Areas we Cover</h1>
+            <h1 className="section-heading-section">Louisiana</h1>
             <div className="underline"></div>
           </div>
           <div className="services">
@@ -212,62 +386,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="team">
-          <div className="section-header">
-            <h1 className="section-heading">Let us Help You</h1>
-            <div className="underline"></div>
-          </div>
-
-          <div className="cards-wrapper">
-            <div className="card" data-tilt>
-              <h1>Roofing</h1>
-              <div className="card-img-wrapper">
-                <img src={Pic_roofing} alt="CEO" />
-              </div>
-              {/*  <div className="card-info">
-                <h2>Roofing Services</h2>
-                  <h3>CEO</h3>
-                <p>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, impedit!"
-                </p>
-                <button>Read More</button>
-              </div>*/}
-            </div>
-            <div className="card" data-tilt>
-              <h1>Heating</h1>
-              <div className="card-img-wrapper">
-                <img src={Pic_heating} alt="Designer" />
-              </div>
-              {/*  <div className="card-info">
-                <h2>Heating/Air Conditioning Services</h2>
-                <h3>Designer</h3>
-                <p>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, impedit!"
-                </p>
-                <button>Read More</button>
-              </div> */}
-            </div>
-            <div className="card" data-tilt>
-              <h1>Renovation</h1>
-              <div className="card-img-wrapper">
-                <img src={Kitchen_renovation} alt="Architect" />
-              </div>
-              {/* <div className="card-info">
-                <h2>Renovation Services</h2>
-                {/* <h3>Architect</h3>
-                <p>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, impedit!"
-                </p>  
-                  <button>Read More</button>  
-              </div> */}
-            </div>
-          </div>
-        </section>
-
-        <section className="contact">
+        <section id="contact" className="contact">
           <div className="contact-wrapper">
             <div className="contact-left"></div>
             <div className="contact-right">
@@ -308,7 +427,7 @@ const Home = () => {
         <footer className="footer">
           <div className="footer-content">
             <p className="copyright">
-              Copyright &copy; 2020, Maurice Arida - All Rights Reserved
+              Copyright &copy; 2020, Local & Global Market - All Rights Reserved
             </p>
             <div className="social-list">
               <a href="#">

@@ -9,6 +9,8 @@
 
 html {
   font-size: 62.5%;
+
+  scroll-behavior: smooth;
 }
 
 .spinner-container {
@@ -360,6 +362,7 @@ html {
   font-size: 4rem;
   color: #555;
   position: relative;
+  display: inline;
 }
 
 .menu-link::before {
@@ -423,6 +426,14 @@ html {
   font-weight: 300;
   color: #4b4b4b;
   margin-bottom: 6rem;
+}
+.section-heading-section {
+  color: #7a2825;
+  font-family: "Josefin Slab", serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #4b4b4b;
+  margin-bottom: 4rem;
 }
 
 .underline {
